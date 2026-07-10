@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="f1" cx="0.5" cy="0.75" r="0.8">
+      <stop offset="0" stop-color="#ffd633"/>
+      <stop offset="0.5" stop-color="#f75828"/>
+      <stop offset="1" stop-color="#c1121f"/>
+    </radialGradient>
+  </defs>
+  <!-- flame -->
+  <path d="M200 40
+           C210 110 268 140 282 205
+           C294 262 268 330 200 344
+           C132 330 106 262 118 205
+           C126 168 148 148 162 120
+           C170 150 182 160 192 162
+           C178 118 190 72 200 40 Z"
+        fill="url(#f1)"/>
+  <path d="M200 200
+           C226 232 236 262 222 292
+           C214 310 178 314 166 290
+           C154 264 168 234 200 200 Z"
+        fill="#ffe98a"/>
+</svg>

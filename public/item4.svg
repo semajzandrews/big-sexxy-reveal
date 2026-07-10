@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="k1" cx="0.4" cy="0.3" r="1">
+      <stop offset="0" stop-color="#ff5a63"/>
+      <stop offset="0.6" stop-color="#e01b22"/>
+      <stop offset="1" stop-color="#9c0f15"/>
+    </radialGradient>
+  </defs>
+  <!-- kiss mark echoing the label -->
+  <path d="M200 170
+           C180 130 130 118 100 142
+           C70 166 72 206 96 228
+           C118 248 160 252 196 244
+           C168 268 150 300 158 330
+           C164 352 190 358 200 340
+           C210 358 236 352 242 330
+           C250 300 232 268 204 244
+           C240 252 282 248 304 228
+           C328 206 330 166 300 142
+           C270 118 220 130 200 170 Z"
+        fill="url(#k1)"/>
+  <path d="M112 152 C94 168 92 196 108 214" fill="none" stroke="#ff9ba0" stroke-opacity="0.8" stroke-width="12" stroke-linecap="round"/>
+</svg>

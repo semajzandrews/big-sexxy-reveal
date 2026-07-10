@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="p2" cx="0.35" cy="0.3" r="0.95">
+      <stop offset="0" stop-color="#b7ef62"/>
+      <stop offset="0.5" stop-color="#5bc236"/>
+      <stop offset="1" stop-color="#2c7a14"/>
+    </radialGradient>
+  </defs>
+  <!-- scotch bonnet: squat lobed pepper -->
+  <path d="M200 120
+           C120 120 85 175 90 235
+           C94 290 140 330 200 330
+           C260 330 306 290 310 235
+           C315 175 280 120 200 120 Z"
+        fill="url(#p2)"/>
+  <path d="M120 150 C100 195 100 260 130 296" fill="none" stroke="#e2ffb0" stroke-opacity="0.75" stroke-width="14" stroke-linecap="round"/>
+  <path d="M145 132 C150 250 150 260 158 320 M255 132 C250 250 250 260 242 320"
+        fill="none" stroke="#2c7a14" stroke-opacity="0.5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M196 118 C190 90 198 66 220 52 C202 86 214 104 218 118 Z" fill="#3f7d1c"/>
+</svg>
