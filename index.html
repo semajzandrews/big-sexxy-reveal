@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Big Sexxy Hot Sauce</title>
-    <meta name="description" content="Big Sexxy Hot Sauce. Scotch bonnet forward, small batch, big flavor. Brutal heat with a velvet texture." />
+    <title>Big Sexxy Hot Sauce | Small-Batch Sauce Made for Tacos</title>
+    <meta name="description" content="Big Sexxy Hot Sauce. Small batch, flavor first, no harsh burn. The sexy sauce your tacos have been waiting for." />
     <link rel="stylesheet" href="/fonts/fonts.css" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="icon" type="image/png" href="/logo.png" />
@@ -29,23 +29,24 @@
 
     <nav>
       <div class="nav-logo">
-        <a href="#top"><img src="/logo.png" alt="Big Sexxy Hot Sauce" /></a>
+        <a href="/"><img src="/logo.png" alt="Big Sexxy Hot Sauce" /></a>
       </div>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <div class="nav-items">
-        <a href="#pairings">Pairings</a>
-        <a href="#heat">Heat</a>
-        <a href="#story">Our Story</a>
-        <a href="#faq">FAQ</a>
-        <a href="#order">Order</a>
+        <a href="/shop/">Shop</a>
+        <a href="/wholesale/">Wholesale</a>
+        <a href="/about/">About</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/contact/">Contact</a>
+        <a href="#" class="cart-link">Cart <span class="cart-count"></span></a>
       </div>
     </nav>
 
     <section class="hero" id="top">
       <div class="hero-header">
-        <h1>The sauce that seduces the palate</h1>
+        <h1>The hot sauce that makes other sauces jealous</h1>
       </div>
 
       <div class="hero-img">
@@ -54,128 +55,144 @@
       </div>
 
       <div class="hero-footer">
-        <p>Scotch Bonnet Forward</p>
+        <p>Flavor First</p>
         <p>Small Batch, Big Flavor</p>
       </div>
     </section>
 
-    <section class="pairings" id="pairings">
+    <section class="intro-statement">
+      <p data-reveal>
+        Our hot sauce keeps it real. Smooth, sexy flavor with a gentle warmth
+        that never burns. Slap it on your tacos and act surprised when people
+        think you can cook.
+      </p>
+    </section>
+
+    <section class="values">
+      <div class="value-card" data-reveal>
+        <h3>Small Batch</h3>
+        <p>Made in small runs, poured and labeled by hand. No conveyor belts, no factory shortcuts.</p>
+      </div>
+      <div class="value-card" data-reveal>
+        <h3>Flavor First</h3>
+        <p>Heat is easy. Flavor is the hard part. Every batch is built for taste, not for pain.</p>
+      </div>
+      <div class="value-card" data-reveal>
+        <h3>No Harsh Burn</h3>
+        <p>A sexy, gentle warmth that lets you actually taste your food. Your mouth will thank you.</p>
+      </div>
+      <div class="value-card" data-reveal>
+        <h3>Made for Tacos</h3>
+        <p>Born for taco night and happy everywhere else. Eggs, wings, pizza, whatever you have.</p>
+      </div>
+    </section>
+
+    <section class="product-feature" data-product data-reveal>
       <div class="section-header">
-        <p class="kicker">Pairings</p>
-        <h2>Put it on everything</h2>
+        <p class="kicker">The Sauce</p>
+        <h2>One sauce. That's the point.</h2>
       </div>
-      <div class="pairing-grid">
-        <figure class="pairing-card"><img src="/img/wings-g.jpg" alt="Fried chicken wings" loading="lazy" /><figcaption>Wings</figcaption></figure>
-        <figure class="pairing-card"><img src="/img/tacos-g.jpg" alt="Street tacos" loading="lazy" /><figcaption>Tacos</figcaption></figure>
-        <figure class="pairing-card"><img src="/img/pizza-g.jpg" alt="Pizza slice" loading="lazy" /><figcaption>Pizza</figcaption></figure>
-        <figure class="pairing-card"><img src="/img/ramen-g.jpg" alt="Bowl of ramen" loading="lazy" /><figcaption>Ramen</figcaption></figure>
-        <figure class="pairing-card"><img src="/img/eggs-g.jpg" alt="Breakfast eggs" loading="lazy" /><figcaption>Eggs</figcaption></figure>
-        <figure class="pairing-card"><img src="/img/oysters-g.jpg" alt="Fresh oysters" loading="lazy" /><figcaption>Oysters</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="heat" id="heat">
-      <div class="heat-bottle">
-        <div class="heat-bottle-bg"></div>
-        <img src="/bottle.svg" alt="Big Sexxy Signature Blend bottle" loading="lazy" />
-      </div>
-      <div class="heat-copy">
-        <p class="kicker">The Signature Blend</p>
-        <h2>Brutal heat. Velvet texture.</h2>
-        <p class="lede">
-          A masterclass in controlled combustion. We balance brutal heat with a
-          velvet texture for a flavor profile that seduces the palate.
-        </p>
-        <div class="heat-meter" aria-label="Heat level 4 out of 5">
-          <span class="pepper lit"></span>
-          <span class="pepper lit"></span>
-          <span class="pepper lit"></span>
-          <span class="pepper lit"></span>
-          <span class="pepper"></span>
-          <p>Bring milk</p>
-        </div>
-        <ul class="heat-stats">
-          <li><strong>Scotch bonnet</strong><span>forward</span></li>
-          <li><strong>5 fl oz</strong><span>per bottle</span></li>
-          <li><strong>Small batch</strong><span>every run</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="story" id="story">
-      <div class="section-header">
-        <p class="kicker">Our Story</p>
-        <h2>The face on the bottle is real</h2>
-      </div>
-      <div class="story-body">
-        <p>
-          Big Sexxy started in a home kitchen with one rule: never trade flavor
-          for heat. Chris built the blend the hard way, batch after batch,
-          until the scotch bonnet burn landed smooth instead of sharp.
-        </p>
-        <p>
-          Every bottle is still made in small runs, poured and labeled by hand.
-          That kiss on the label? Earned.
-        </p>
-      </div>
-    </section>
-
-    <section class="order" id="order">
-      <div class="order-card">
-        <div class="order-img">
+      <div class="product-card">
+        <div class="product-card-img">
           <img src="/bottle.svg" alt="Big Sexxy Signature Blend bottle" loading="lazy" />
         </div>
-        <div class="order-info">
-          <p class="kicker">Shop</p>
-          <h2>Signature Blend</h2>
+        <div class="product-card-info">
+          <h3>Signature<br />Blend</h3>
+          <p class="product-tagline">Smooth heat. Sexy taste.<br />Zero regrets.</p>
           <p class="order-price"><span class="price-now">$10</span> <s class="price-was">$15</s> <span class="price-note">launch price</span></p>
-          <div class="qty-row">
-            <button class="qty-btn" data-qty="-1" aria-label="Decrease quantity">&minus;</button>
-            <span class="qty-value" aria-live="polite">1</span>
-            <button class="qty-btn" data-qty="1" aria-label="Increase quantity">+</button>
-            <span class="order-total">Total: $10</span>
+          <div class="product-actions">
+            <button class="add-to-cart" data-sku="single"><span class="atc-label">Add to Cart</span></button>
+            <a class="ghost-btn" href="/shop/signature-blend/">View Product</a>
           </div>
-          <p class="ship-note">Free shipping over $40. Flat $6 under.</p>
-          <a class="order-btn" href="mailto:orders@bigsexxyhotsauce.com?subject=Big%20Sexxy%20Order&body=I%20want%201%20bottle%20of%20the%20Signature%20Blend.">Order Now</a>
         </div>
       </div>
     </section>
 
-    <section class="faq" id="faq">
+    <section class="why">
       <div class="section-header">
-        <p class="kicker">FAQ</p>
-        <h2>Before you ask</h2>
+        <p class="kicker">Why Big Sexxy</p>
+        <h2>We make small-batch hot sauce because boring tacos are a crime</h2>
       </div>
-      <div class="faq-list">
-        <details>
-          <summary>How hot is it, really?</summary>
-          <p>Scotch bonnet forward, so it arrives fast and blooms. Hotter than any grocery shelf sauce, friendlier than an extract stunt sauce. Flavor first, always.</p>
-        </details>
-        <details>
-          <summary>What do I put it on?</summary>
-          <p>Wings, tacos, pizza, ramen, eggs, oysters. If it is edible, it qualifies. Start with a few drops and work up.</p>
-        </details>
-        <details>
-          <summary>How should I store it?</summary>
-          <p>Refrigerate after opening and use within a few months. It rarely lasts that long.</p>
-        </details>
-        <details>
-          <summary>Do you ship?</summary>
-          <p>Yes. Flat $6 shipping, free on orders over $40.</p>
-        </details>
+      <div class="why-list">
+        <div class="why-item" data-reveal>
+          <span class="why-num">01</span>
+          <h3>Small Batches</h3>
+          <p>Small runs, slow blending, constant taste checks, and Chris hovering over every batch like it owes him money.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <span class="why-num">02</span>
+          <h3>Real Flavor</h3>
+          <p>This is not a dare in a bottle. It is seasoning with swagger. Warmth that flatters the food instead of fighting it.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <span class="why-num">03</span>
+          <h3>Built for Tacos</h3>
+          <p>Tested where it matters: taco night. If a batch does not make a taco better, it does not leave the kitchen.</p>
+        </div>
       </div>
+    </section>
+
+    <section class="pack" data-product data-reveal>
+      <div class="section-header">
+        <p class="kicker">Buy a Pack</p>
+        <h2>Stock up. Stay sexxy.</h2>
+      </div>
+      <div class="pack-card">
+        <div class="pack-img"><img src="/bottle.svg" alt="Big Sexxy Signature Blend bottles" loading="lazy" /></div>
+        <div class="pack-info">
+          <div class="size-picker">
+            <button data-sku="3pack" class="active">3 Pack</button>
+            <button data-sku="6pack">6 Pack</button>
+          </div>
+          <p class="order-price"><span class="price-now">$27</span></p>
+          <p class="ship-note">Free shipping over $40. Flat $6 under.</p>
+          <button class="add-to-cart" data-sku="3pack"><span class="atc-label">Add to Cart</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="section-header">
+        <p class="kicker">Reviews</p>
+        <h2>Word is getting around</h2>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Smooth heat</span><span>&#10022;</span>
+          <span>Sexy taste</span><span>&#10022;</span>
+          <span>Taco night approved</span><span>&#10022;</span>
+          <span>No harsh burn</span><span>&#10022;</span>
+          <span>Small batch</span><span>&#10022;</span>
+          <span>Put it on everything</span><span>&#10022;</span>
+          <span>Smooth heat</span><span>&#10022;</span>
+          <span>Sexy taste</span><span>&#10022;</span>
+          <span>Taco night approved</span><span>&#10022;</span>
+          <span>No harsh burn</span><span>&#10022;</span>
+          <span>Small batch</span><span>&#10022;</span>
+          <span>Put it on everything</span><span>&#10022;</span>
+        </div>
+      </div>
+      <p class="reviews-note" data-reveal>Customer reviews land here as they roll in. Tried it? <a href="/contact/">Tell us.</a></p>
     </section>
 
     <footer>
       <div class="footer-top">
         <img src="/logo.png" alt="Big Sexxy Hot Sauce" />
         <div class="footer-links">
-          <a href="#pairings">Pairings</a>
-          <a href="#heat">Heat</a>
-          <a href="#story">Our Story</a>
-          <a href="#faq">FAQ</a>
-          <a href="#order">Order</a>
+          <a href="/shop/">Shop</a>
+          <a href="/wholesale/">Wholesale</a>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/contact/">Contact</a>
         </div>
+      </div>
+      <div class="footer-club">
+        <h3>Join the Sexxy Club</h3>
+        <p>Restocks. New drops. Taco intel.</p>
+        <form data-mailto="orders@bigsexxyhotsauce.com" data-subject="Sexxy Club Signup">
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit">Sign Up</button>
+        </form>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Big Sexxy Hot Sauce. All rights reserved.</p>
@@ -183,6 +200,7 @@
       </div>
     </footer>
 
+    <script type="module" src="/site.js"></script>
     <script type="module" src="/script.js"></script>
   </body>
 </html>

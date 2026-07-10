@@ -808,3 +808,729 @@ footer {
     flex-wrap: wrap;
   }
 }
+
+/* ---------- subpages ---------- */
+
+.subpage {
+  padding-top: 0;
+}
+
+.page-hero {
+  padding: clamp(9rem, 16vw, 13rem) clamp(1.25rem, 4vw, 4rem) clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.75rem, 5.5vw, 6.5rem);
+}
+
+.page-hero-sub {
+  margin: 1.5rem auto 0;
+  max-width: 34rem;
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  line-height: 1.55;
+  color: rgba(255, 246, 224, 0.8);
+}
+
+/* ---------- intro statement ---------- */
+
+.intro-statement {
+  max-width: 52rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-statement p {
+  font-family: "Barlow Condensed";
+  font-weight: 600;
+  font-size: clamp(1.75rem, 3.2vw, 3rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: rgba(255, 246, 224, 0.92);
+}
+
+/* ---------- values ---------- */
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(0.75rem, 1.5vw, 1.5rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: var(--base-450);
+  border: 1px solid rgba(255, 246, 224, 0.12);
+  border-radius: 16px;
+  padding: clamp(1.25rem, 2vw, 2rem);
+}
+
+.value-card h3 {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  text-transform: uppercase;
+  color: var(--base-200);
+  margin-bottom: 0.75rem;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 246, 224, 0.75);
+}
+
+/* ---------- product card ---------- */
+
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+  max-width: 950px;
+  margin: 0 auto;
+  background: var(--base-450);
+  border: 1px solid rgba(242, 193, 30, 0.2);
+  border-radius: 20px;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.product-card-img {
+  display: flex;
+  justify-content: center;
+}
+
+.product-card-img img {
+  width: min(55%, 190px);
+}
+
+.product-card-info h3 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.product-tagline {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.5;
+  color: rgba(255, 246, 224, 0.8);
+}
+
+.product-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.add-to-cart {
+  background: var(--base-400);
+  color: var(--base-100);
+  font-family: "Barlow Condensed";
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.85rem 2.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.add-to-cart:hover:not(:disabled) {
+  background: #f52a31;
+  transform: translateY(-2px);
+}
+
+.add-to-cart:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.ghost-btn {
+  display: inline-block;
+  border: 1px solid rgba(255, 246, 224, 0.35);
+  color: var(--base-100);
+  font-size: 1.35rem;
+  padding: 0.8rem 2rem;
+  border-radius: 999px;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.ghost-btn:hover {
+  border-color: var(--base-200);
+  color: var(--base-200);
+}
+
+/* ---------- why ---------- */
+
+.why-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.why-item {
+  border-top: 2px solid var(--base-200);
+  padding-top: 1.5rem;
+}
+
+.why-num {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--base-200);
+  letter-spacing: 0.2em;
+}
+
+.why-item h3 {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+  text-transform: uppercase;
+  color: var(--base-100);
+  margin: 0.75rem 0;
+}
+
+.why-item p {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: rgba(255, 246, 224, 0.75);
+}
+
+/* ---------- pack ---------- */
+
+.pack-card {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(242, 193, 30, 0.12), rgba(224, 27, 34, 0.08)), var(--base-450);
+  border: 1px solid rgba(242, 193, 30, 0.25);
+  border-radius: 20px;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.pack-img {
+  display: flex;
+  justify-content: center;
+}
+
+.pack-img img {
+  width: min(50%, 170px);
+}
+
+.size-picker {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.size-picker button {
+  font-family: "Barlow Condensed";
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  background: transparent;
+  color: rgba(255, 246, 224, 0.7);
+  border: 1px solid rgba(255, 246, 224, 0.3);
+  border-radius: 999px;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.size-picker button.active {
+  background: var(--base-200);
+  border-color: var(--base-200);
+  color: var(--base-500);
+}
+
+/* ---------- reviews marquee ---------- */
+
+.reviews {
+  overflow: hidden;
+}
+
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 246, 224, 0.15);
+  border-bottom: 1px solid rgba(255, 246, 224, 0.15);
+  padding: 1.25rem 0;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track span {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  text-transform: uppercase;
+  color: var(--base-100);
+  white-space: nowrap;
+}
+
+.marquee-track span:nth-child(even) {
+  color: var(--base-200);
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+.reviews-note {
+  text-align: center;
+  margin-top: 2rem;
+  color: rgba(255, 246, 224, 0.65);
+}
+
+.reviews-note a {
+  font-family: "Instrument Sans";
+  font-size: 1rem;
+  text-transform: none;
+  color: var(--base-200);
+  text-decoration: underline;
+}
+
+/* ---------- pdp ---------- */
+
+.pdp {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-top: clamp(8rem, 14vw, 11rem);
+}
+
+.pdp-img {
+  position: sticky;
+  top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdp-img img {
+  position: absolute;
+  width: min(50%, 210px);
+  transform: rotate(-6deg);
+}
+
+.pdp-info h1 {
+  font-size: clamp(2.25rem, 4vw, 4.5rem);
+  margin-bottom: 2rem;
+}
+
+.pdp-block {
+  margin-bottom: 2rem;
+}
+
+.pdp-block h3 {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--base-200);
+  margin-bottom: 0.75rem;
+}
+
+.pdp-block ul {
+  list-style: none;
+}
+
+.pdp-block li {
+  padding-left: 1.4rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: rgba(255, 246, 224, 0.85);
+}
+
+.pdp-block li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50% 50% 50% 2px;
+  background: var(--base-400);
+  transform: rotate(45deg);
+}
+
+.pdp-block p {
+  line-height: 1.55;
+  color: rgba(255, 246, 224, 0.85);
+}
+
+.pdp-buy {
+  border-top: 1px solid rgba(255, 246, 224, 0.15);
+  padding-top: 1.75rem;
+}
+
+.pdp-buy .add-to-cart {
+  margin-top: 0.5rem;
+}
+
+.pdp-buy .ship-note {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* ---------- forms ---------- */
+
+.contact-form {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.big-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.big-form input,
+.big-form select,
+.big-form textarea {
+  background: var(--base-450);
+  border: 1px solid rgba(255, 246, 224, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  color: var(--base-100);
+  font-family: "Instrument Sans";
+  font-size: 1rem;
+}
+
+.big-form input:focus,
+.big-form select:focus,
+.big-form textarea:focus {
+  outline: none;
+  border-color: var(--base-200);
+}
+
+.big-form button {
+  align-self: flex-start;
+  background: var(--base-400);
+  color: var(--base-100);
+  font-family: "Barlow Condensed";
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.85rem 2.75rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.big-form button:hover {
+  background: #f52a31;
+}
+
+/* ---------- footer club ---------- */
+
+.footer-club {
+  margin-bottom: 2.5rem;
+  max-width: 26rem;
+}
+
+.footer-club h3 {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: var(--base-200);
+  margin-bottom: 0.35rem;
+}
+
+.footer-club p {
+  color: rgba(255, 246, 224, 0.65);
+  margin-bottom: 1rem;
+}
+
+.footer-club form {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.footer-club input {
+  flex: 1;
+  background: var(--base-450);
+  border: 1px solid rgba(255, 246, 224, 0.2);
+  border-radius: 999px;
+  padding: 0.7rem 1.25rem;
+  color: var(--base-100);
+  font-family: "Instrument Sans";
+}
+
+.footer-club input:focus {
+  outline: none;
+  border-color: var(--base-200);
+}
+
+.footer-club button {
+  background: var(--base-200);
+  color: var(--base-500);
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+}
+
+/* ---------- cart drawer ---------- */
+
+.cart-count {
+  display: none;
+  background: var(--base-400);
+  color: var(--base-100);
+  border-radius: 999px;
+  min-width: 1.4rem;
+  height: 1.4rem;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.3rem;
+  margin-left: 0.25rem;
+  vertical-align: 0.15rem;
+}
+
+.cart-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.cart-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cart-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(420px, 92vw);
+  background: var(--base-450);
+  border-left: 1px solid rgba(242, 193, 30, 0.25);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cart-drawer.open {
+  pointer-events: auto;
+}
+
+.cart-drawer.open .cart-overlay {
+  opacity: 1;
+}
+
+.cart-drawer.open .cart-panel {
+  transform: translateX(0);
+}
+
+.cart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 246, 224, 0.12);
+}
+
+.cart-head h3 {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: var(--base-100);
+}
+
+.cart-close {
+  background: none;
+  border: none;
+  color: var(--base-100);
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-empty {
+  color: rgba(255, 246, 224, 0.6);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  background: rgba(255, 246, 224, 0.05);
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+
+.cart-item img {
+  width: 100%;
+}
+
+.cart-item-name {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+}
+
+.cart-item-detail {
+  font-size: 0.85rem;
+  color: rgba(255, 246, 224, 0.65);
+}
+
+.cart-item-qty {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-item-qty button {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 246, 224, 0.3);
+  background: transparent;
+  color: var(--base-100);
+  cursor: pointer;
+}
+
+.cart-item-qty span {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  color: var(--base-100);
+  min-width: 1.2rem;
+  text-align: center;
+}
+
+.cart-foot {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 246, 224, 0.12);
+}
+
+.cart-ship {
+  font-size: 0.85rem;
+  color: var(--base-300);
+  margin-bottom: 0.4rem;
+}
+
+.cart-subtotal {
+  font-family: "Barlow Condensed";
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--base-100);
+  margin-bottom: 1rem;
+}
+
+.cart-checkout {
+  display: block;
+  text-align: center;
+  background: var(--base-400);
+  color: var(--base-100);
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 0.9rem;
+  border-radius: 999px;
+}
+
+/* ---------- responsive additions ---------- */
+
+@media (max-width: 1000px) {
+  .values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-list {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .product-card,
+  .pack-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .product-actions,
+  .size-picker {
+    justify-content: center;
+  }
+
+  .pdp {
+    grid-template-columns: 1fr;
+  }
+
+  .pdp-img {
+    position: relative;
+    top: 0;
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .values {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-club form {
+    flex-direction: column;
+  }
+
+  .footer-club button {
+    align-self: flex-start;
+  }
+
+  .pdp-buy .qty-row {
+    justify-content: flex-start;
+  }
+}

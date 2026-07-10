@@ -1,55 +1,9 @@
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
 
-gsap.registerPlugin(SplitText, ScrollTrigger);
+gsap.registerPlugin(SplitText);
 
-/* ---------- smooth scroll ---------- */
-
-const lenis = new Lenis({ anchors: true });
-lenis.on("scroll", ScrollTrigger.update);
-gsap.ticker.add((time) => lenis.raf(time * 1000));
-gsap.ticker.lagSmoothing(0);
-
-/* ---------- order card ---------- */
-
-const PRICE = 10;
-const qtyValue = document.querySelector(".qty-value");
-const orderTotal = document.querySelector(".order-total");
-const orderBtn = document.querySelector(".order-btn");
-let qty = 1;
-
-document.querySelectorAll(".qty-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    qty = Math.min(24, Math.max(1, qty + Number(btn.dataset.qty)));
-    qtyValue.textContent = qty;
-    orderTotal.textContent = `Total: $${qty * PRICE}`;
-    const noun = qty === 1 ? "bottle" : "bottles";
-    orderBtn.href = `mailto:orders@bigsexxyhotsauce.com?subject=Big%20Sexxy%20Order&body=${encodeURIComponent(
-      `I want ${qty} ${noun} of the Signature Blend.`,
-    )}`;
-  });
-});
-
-/* ---------- mobile nav ---------- */
-
-const nav = document.querySelector("nav");
-const navToggle = document.querySelector(".nav-toggle");
-
-navToggle.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", open);
-});
-
-document.querySelectorAll(".nav-items a").forEach((link) => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
-  });
-});
-
-/* ---------- intro reveal ---------- */
+/* home page intro reveal */
 
 document.fonts.ready.then(() => {
   const navLinks = SplitText.create(".nav-items a", {
@@ -204,54 +158,4 @@ document.fonts.ready.then(() => {
   );
 
   tl.set(".preloader", { display: "none" });
-
-  /* ---------- scroll reveals ---------- */
-
-  const reduceMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)",
-  ).matches;
-
-  if (!reduceMotion) {
-    const revealTargets = [
-      ".section-header",
-      ".pairing-card",
-      ".heat-bottle",
-      ".heat-copy",
-      ".story-body p",
-      ".order-card",
-      ".faq-list details",
-    ];
-
-    revealTargets.forEach((selector) => {
-      gsap.utils.toArray(selector).forEach((el, i) => {
-        gsap.fromTo(
-          el,
-          { y: 50, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.9,
-            ease: "power3.out",
-            delay: (i % 3) * 0.08,
-            scrollTrigger: {
-              trigger: el,
-              start: "top 88%",
-              once: true,
-            },
-          },
-        );
-      });
-    });
-
-    gsap.to(".heat-bottle img", {
-      rotation: 8,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".heat",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1,
-      },
-    });
-  }
 });
