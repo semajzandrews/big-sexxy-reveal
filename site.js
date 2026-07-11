@@ -14,9 +14,9 @@ gsap.ticker.lagSmoothing(0);
 /* ---------- catalog ---------- */
 
 export const CATALOG = {
-  single: { name: "Signature Blend", detail: "1 bottle", price: 10 },
-  "3pack": { name: "Signature Blend", detail: "3 pack", price: 27 },
-  "6pack": { name: "Signature Blend", detail: "6 pack", price: 50 },
+  single: { name: "Signature Blend", detail: "1 bottle", price: 12 },
+  "3pack": { name: "Signature Blend", detail: "3 pack", price: 33 },
+  "5pack": { name: "Signature Blend", detail: "5 pack", price: 50 },
 };
 
 /* ---------- cart ---------- */
